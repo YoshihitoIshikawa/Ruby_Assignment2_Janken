@@ -18,7 +18,7 @@ if memo_type == 1
   memo = readlines
   
   CSV.open("#{file_name}.csv","w") do |csv|
-    csv << ["#{memo}"]
+    csv << memo
   end
   
   puts "---メモの作成が完了しました。---"
