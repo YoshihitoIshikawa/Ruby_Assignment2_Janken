@@ -40,7 +40,7 @@ if memo_type == 2
   edit_memo = readlines
   
   CSV.open("#{import_file_name}.csv","a") do |csv|
-    csv << ["#{edit_memo}"]
+    csv << edit_memo
   end
   
   puts "---追記が完了しました。---"
