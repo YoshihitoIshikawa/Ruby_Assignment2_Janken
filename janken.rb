@@ -13,7 +13,7 @@ janken_value = ["グー","チョキ","パー"]
 atchimuite_value = ["上","下","左","右"]
 
 
-if your_hand == 0 || your_hand == 1 || your_hand == 2
+if janken_value[your_hand] == janken_value[0] || janken_value[your_hand] == janken_value[1] || janken_value[your_hand] == janken_value[2]
   
   puts "ポン！"
   puts "----------"
@@ -24,7 +24,7 @@ if your_hand == 0 || your_hand == 1 || your_hand == 2
   if janken_value[your_hand] == janken_value[opponent_hand]
     while janken_value[your_hand] == janken_value[opponent_hand]
     puts "あいこで〜"
-    puts "0(グー) 1(チョキ) 2(パー) 3(戦わない)"
+    puts "0(グー) 1(チョキ) 2(パー)"
     your_hand = gets.chomp.to_i
     opponent_hand = rand(3).to_i
     puts "ショ！"
@@ -32,7 +32,7 @@ if your_hand == 0 || your_hand == 1 || your_hand == 2
     puts "相手：#{janken_value[opponent_hand]}を出しました"
     end 
       
-      if janken_value[your_hand] = janken_value[0] && janken_value[opponent_hand] == janken_value[1] || janken_value[your_hand] = janken_value[1] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] = janken_value[2] && janken_value[opponent_hand] == janken_value[0]
+      if janken_value[your_hand] == janken_value[0] && janken_value[opponent_hand] == janken_value[1] || janken_value[your_hand] == janken_value[1] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] == janken_value[2] && janken_value[opponent_hand] == janken_value[0]
         puts "----------"
         puts "あっち向いて〜"
         puts "0(上) 1(下) 2(左) 3(右)"
@@ -47,7 +47,7 @@ if your_hand == 0 || your_hand == 1 || your_hand == 2
            game_result = "you_win"
           end 
     
-      elsif janken_value[your_hand] = janken_value[0] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] = janken_value[1] && janken_value[opponent_hand] == janken_value[0] || janken_value[your_hand] = janken_value[2] && janken_value[opponent_hand] == janken_value[1]
+      elsif janken_value[your_hand] == janken_value[0] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] == janken_value[1] && janken_value[opponent_hand] == janken_value[0] || janken_value[your_hand] == janken_value[2] && janken_value[opponent_hand] == janken_value[1]
         puts "----------"
         puts "あっち向いて〜"
         puts "0(上) 1(下) 2(左) 3(右)"
@@ -63,7 +63,7 @@ if your_hand == 0 || your_hand == 1 || your_hand == 2
           end 
       end 
     
-  elsif janken_value[your_hand] = janken_value[0] && janken_value[opponent_hand] == janken_value[1] || janken_value[your_hand] = janken_value[1] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] = janken_value[2] && janken_value[opponent_hand] == janken_value[0]
+  elsif janken_value[your_hand] == janken_value[0] && janken_value[opponent_hand] == janken_value[1] || janken_value[your_hand] == janken_value[1] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] == janken_value[2] && janken_value[opponent_hand] == janken_value[0]
     puts "----------"
     puts "あっち向いて〜"
     puts "0(上) 1(下) 2(左) 3(右)"
@@ -78,7 +78,7 @@ if your_hand == 0 || your_hand == 1 || your_hand == 2
        game_result = "you_win"
       end 
     
-  elsif janken_value[your_hand] = janken_value[0] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] = janken_value[1] && janken_value[opponent_hand] == janken_value[0] || janken_value[your_hand] = janken_value[2] && janken_value[opponent_hand] == janken_value[1]
+  elsif janken_value[your_hand] == janken_value[0] && janken_value[opponent_hand] == janken_value[2] || janken_value[your_hand] == janken_value[1] && janken_value[opponent_hand] == janken_value[0] || janken_value[your_hand] == janken_value[2] && janken_value[opponent_hand] == janken_value[1]
     puts "----------"
     puts "あっち向いて〜"
     puts "0(上) 1(下) 2(左) 3(右)"
